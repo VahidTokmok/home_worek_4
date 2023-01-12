@@ -79,14 +79,14 @@ public class Main {
     }
     public static void hilling(){
         for (int i = 0; i < heroesHealth.length; i++) {
-            if (i == heroesHealth[3]) {
+            if (i == 3) {
                 continue;
             }
             if (heroesHealth[i] > 0 && heroesHealth[i] < 100 ) {
-                heroesHealth[i] += 20;System.out.println("Добавлено здоровья : " + heroesAttackType[i]);
-                break;
+                heroesHealth[i] += 20;
             }
-
+            System.out.println(" Medic healed " + heroesAttackType[i]);
+            break;
         }
     }
     public static boolean isGameFinished() {
